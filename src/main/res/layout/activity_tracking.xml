@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Camera top half with Overlay -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/trackingPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <com.example.eyetracking.TrackingOverlay
+            android:id="@+id/trackingOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/> <!-- Example semi-transparent red background -->
+
+    </FrameLayout>
+
+    <!-- Metrics -->
+    <GridLayout
+        android:id="@+id/metricsGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="8dp"
+        android:background="#f5f5f5">
+
+        <!-- 1. Gaze Duration -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/metric_card_bg"
+            android:gravity="center">
+
+            <TextView
+                android:text="👁️ Gaze Duration"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tvGazeDuration"
+                android:text="0"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:text="ms"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <!-- 2. Dwell Time -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/metric_card_bg"
+            android:gravity="center">
+
+            <TextView
+                android:text="⏱️ Dwell Time"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tvDwellTime"
+                android:text="0"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:text="ms"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <!-- 3. Saccade Length -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/metric_card_bg"
+            android:gravity="center">
+
+            <TextView
+                android:text="🔄 Saccade Length"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tvSaccadeLength"
+                android:text="0.0"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:text="px"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <!-- 4. Distractor Saccades -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/metric_card_bg"
+            android:gravity="center">
+
+            <TextView
+                android:text="🚫 Distractor Saccades"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tvDistractorSaccades"
+                android:text="0"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:text="count"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <!-- 5. Fixation Count -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/metric_card_bg"
+            android:gravity="center">
+
+            <TextView
+                android:text="🎯 Fixation Count"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tvFixationCount"
+                android:text="0"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:text="count"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <!-- 6. Refixation Ratio -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/metric_card_bg"
+            android:gravity="center">
+
+            <TextView
+                android:text="🔄 Refixation Ratio"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tvRefixationRatio"
+                android:text="0.00"
+                android:textSize="22sp"
+                android:textColor="@color/purple_500"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:text="ratio"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnStartTracking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Tracking"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnStopTracking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop Tracking"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

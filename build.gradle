@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application' version '8.12.2'
+    id 'org.jetbrains.kotlin.android' version '2.2.10'
+}
+
+android {
+    namespace "com.example.eyetracking"
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.example.eyetracking"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlin {
+        jvmToolchain(17)
+    }
+    ndkVersion '26.1.10909125'
+    packaging {
+        resources {
+            excludes += "META-INF/native-image/macosx-arm64/jnijavacpp/jni-config.json"
+            excludes += "META-INF/native-image/**/jnijavacpp/*.json"
+        }
+    }
+}
+
+dependencies {
+    def camerax_version = "1.4.2"
+    implementation "androidx.camera:camera-core:$camerax_version"
+    implementation "androidx.camera:camera-camera2:$camerax_version"
+    implementation "androidx.camera:camera-lifecycle:$camerax_version"
+    implementation "androidx.camera:camera-view:$camerax_version"
+
+    implementation 'com.google.mediapipe:tasks-vision:0.10.26.1'
+    implementation "com.github.haifengl:smile-core:4.4.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0"
+    implementation "org.apache.commons:commons-math3:3.6.1"
+
+    // Core Android dependencies - latest version with compileSdk 36
+    implementation 'androidx.core:core-ktx:1.17.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+}
+

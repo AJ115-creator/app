@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000" />
+
+    <!-- Overlay for calibration circles -->
+    <com.example.eyetracking.CalibrationOverlay
+        android:id="@+id/calibrationOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Instructions overlay -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/instruction_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👁️ Eye Tracking Calibration"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Look at the red circles as they appear"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Start calibration button -->
+    <Button
+        android:id="@+id/btnStartCalibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/button_background"
+        android:text="Start Calibration"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- Stop calibration button -->
+    <Button
+        android:id="@+id/btnStopCalibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/button_background"
+        android:text="Stop Calibration"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/faceDetectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#80000000"
+        android:padding="8dp"
+        android:text="Please position your face in the camera view"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/predictedGazeView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/gaze_dot"
+        android:visibility="gone" />
+
+</FrameLayout>

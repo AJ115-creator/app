@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This file defines rules for backing up and transferring app data.
+    For more information, see: https://developer.android.com/guide/topics/data/autobackup
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include all shared preferences -->
+        <include domain="sharedpref" />
+        <!-- Exclude specific shared preferences if needed -->
+        <!-- <exclude domain="sharedpref" path="device.xml"/> -->
+    </cloud-backup>
+    <device-transfer>
+        <!-- Rules for device-to-device transfers -->
+        <include domain="sharedpref" />
+    </device-transfer>
+</data-extraction-rules>

@@ -1,0 +1,54 @@
+# Gradle
+.gradle/
+/build/
+*/build/
+
+# Local configuration
+local.properties
+*.iml
+.idea/ # Covers most .idea files, but more specific ones can be added below
+
+# Logs
+*.log
+
+# Misc
+.DS_Store
+
+# Android Build Outputs
+# Generated APKs, AABs, and intermediate files
+*.apk
+*.aab
+*.ap_
+# Profiler captures
+captures/
+# The /build/ and */build/ above already cover the main build directory
+
+# Android Studio / IntelliJ specific
+# More specific .idea sub-folders and files (often covered by .idea/ but good for explicitness)
+.idea/caches/
+.idea/libraries/
+.idea/render.experimental.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetDropDown.xml
+.idea/dataSources/
+.idea/dataSources.ids
+# If you don't want to share run configurations, uncomment the line below
+# .idea/runConfigurations/
+
+# Operating System Files
+# Windows thumbnail cache
+Thumbs.db
+ehthumbs.db
+
+# Temporary/Backup Files
+# Common editor backup files
+*~
+*.bak
+*.orig
+# Vim swap files
+*.swp
+
+# Heap dumps and profiler files
+*.hprof
+*.prof

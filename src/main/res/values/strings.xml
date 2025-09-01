@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Eye Tracking</string>
+    
+    <!-- Main Activity -->
+    <string name="main_title">👁️ Eye Tracking App</string>
+    <string name="main_subtitle">Advanced eye tracking using MediaPipe and CameraX</string>
+    <string name="start_calibration">Start Calibration</string>
+    <string name="main_calibration_instruction">Tap to begin eye tracking calibration</string>
+    
+    <!-- Calibration Activity -->
+    <string name="calibration_title">Eye Tracking Calibration</string>
+    <string name="calibration_screen_instruction">Look at the red circles as they appear</string>
+    <string name="calibration_started">Calibration started. Look at the red circles.</string>
+    <string name="calibration_complete">Calibration complete!</string>
+    <string name="camera_permission_required">Camera permission required</string>
+    
+    <!-- Tracking Activity -->
+    <string name="tracking_title">Eye Tracking</string>
+    
+    <!-- Metrics Labels -->
+    <string name="gaze_duration">👁️ Gaze Duration</string>
+    <string name="dwell_time">⏱️ Dwell Time</string>
+    <string name="saccade_length">🔄 Saccade Length</string>
+    <string name="distractor_saccades">🚫 Distractor Saccades</string>
+    <string name="fixation_count">🎯 Fixation Count</string>
+    <string name="refixation_ratio">🔄 Refixation Ratio</string>
+    
+    <!-- Units -->
+    <string name="unit_milliseconds">ms</string>
+    <string name="unit_pixels">px</string>
+    <string name="unit_count">count</string>
+    <string name="unit_ratio">ratio</string>
+</resources>
