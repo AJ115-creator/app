@@ -71,6 +71,11 @@ class CalibrationActivity : AppCompatActivity() {
         setupUI()
         startCamera()
 
+        // Log overlay dimensions after layout
+        binding.calibrationOverlay.post {
+            Log.d(TAG, "Overlay ready with dimensions: ${binding.calibrationOverlay.width}x${binding.calibrationOverlay.height}")
+        }
+
         Log.d(TAG, "CalibrationActivity initialized successfully")
     }
 
@@ -122,6 +127,19 @@ class CalibrationActivity : AppCompatActivity() {
 
     private fun startCalibration() {
         try {
+            // Ensure we have valid dimensions before starting calibration
+            val dimensions = getValidCalibrationDimensions()
+            if (dimensions == null) {
+                // Wait for layout to complete
+                binding.calibrationOverlay.post {
+                    startCalibration()
+                }
+                return
+            }
+            
+            val (overlayWidth, overlayHeight) = dimensions
+            Log.d(TAG, "Starting calibration with dimensions: ${overlayWidth}x${overlayHeight}")
+            
             isCalibrating = true
             calibrator.reset()
             gazeBuffer.clear()
@@ -139,8 +157,48 @@ class CalibrationActivity : AppCompatActivity() {
 
             Toast.makeText(this, "Calibration started. Look at the red circles.", Toast.LENGTH_LONG).show()
             Log.d(TAG, "Calibration started")
+            
+            // Show the first calibration point immediately
+            showCurrentCalibrationPoint()
         } catch (e: Exception) {
             Log.e(TAG, "Error starting calibration", e)
+        }
+    }
+
+    /**
+     * Get valid dimensions for calibration points, with fallback to parent container
+     */
+    private fun getValidCalibrationDimensions(): Pair<Int, Int>? {
+        val overlayWidth = binding.calibrationOverlay.width
+        val overlayHeight = binding.calibrationOverlay.height
+        
+        if (overlayWidth > 0 && overlayHeight > 0) {
+            return Pair(overlayWidth, overlayHeight)
+        }
+        
+        // Fallback to parent container dimensions
+        val parentWidth = binding.root.width
+        val parentHeight = binding.root.height
+        
+        if (parentWidth > 0 && parentHeight > 0) {
+            Log.d(TAG, "Using parent dimensions as fallback: ${parentWidth}x${parentHeight}")
+            return Pair(parentWidth, parentHeight)
+        }
+        
+        Log.w(TAG, "No valid dimensions available for calibration")
+        return null
+    }
+
+    /**
+     * Show the current calibration point on the overlay
+     */
+    private fun showCurrentCalibrationPoint() {
+        val dimensions = getValidCalibrationDimensions()
+        if (dimensions != null) {
+            val (width, height) = dimensions
+            val targetPoint = calibrator.getCurrentPoint(width, height)
+            binding.calibrationOverlay.updateCalibrationPoint(targetPoint.first, targetPoint.second)
+            Log.d(TAG, "Showing calibration point at: (${targetPoint.first}, ${targetPoint.second})")
         }
     }
 
@@ -203,12 +261,13 @@ class CalibrationActivity : AppCompatActivity() {
                 return
             }
 
-            val overlayWidth = binding.calibrationOverlay.width
-            val overlayHeight = binding.calibrationOverlay.height
-            if (overlayWidth <= 0 || overlayHeight <= 0) {
-                Log.e(TAG, "Overlay dimensions are invalid: $overlayWidth x $overlayHeight")
+            val dimensions = getValidCalibrationDimensions()
+            if (dimensions == null) {
+                Log.w(TAG, "No valid dimensions available for calibration, skipping frame")
                 return
             }
+            
+            val (overlayWidth, overlayHeight) = dimensions
 
             val predictedGaze = calibrator.predict(features)
             if (predictedGaze != null) {
@@ -295,7 +354,11 @@ class CalibrationActivity : AppCompatActivity() {
             }
         } else {
             // Add a pause before collecting data for the next point
-            handler.postDelayed({ canCollect = true }, 500) // 500ms pause
+            handler.postDelayed({ 
+                canCollect = true 
+                // Show the next calibration point
+                showCurrentCalibrationPoint()
+            }, 500) // 500ms pause
         }
     }
 
