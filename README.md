@@ -258,9 +258,6 @@ We welcome contributions from the community! Please read our contributing guidel
 - Include unit tests for new features
 - Update README for significant changes
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -269,12 +266,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Apache Commons Math**: For mathematical computation libraries
 - **Open Source Community**: For inspiration and support
 
-## 📞 Support & Contact
-
-- **Issues**: Report bugs and feature requests via GitHub Issues
-- **Discussions**: Join community discussions on GitHub Discussions
-- **Email**: [Your Email]
-- **Documentation**: [Your Documentation URL]
 
 ## 📈 Version History
 
@@ -287,6 +278,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ using modern Android development practices**
-
-*Last updated: January 2025*
