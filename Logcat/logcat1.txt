@@ -1,0 +1,293 @@
+--------- beginning of crash
+--------- beginning of system
+--------- beginning of main
+2025-09-01 12:09:13.591 17178-17178 ple.eyetracking         com.example.eyetracking              I  Late-enabling -Xcheck:jni
+2025-09-01 12:09:13.713 17178-17178 ple.eyetracking         com.example.eyetracking              I  Using CollectorTypeCC GC.
+2025-09-01 12:09:13.785 17178-17178 ple.eyetracking         com.example.eyetracking              E  BBinder_init Processname  <pre-initialized>  
+2025-09-01 12:09:13.785 17178-17178 ple.eyetracking         com.example.eyetracking              E  BBinder_init hasGetProcessName  <pre-initialized>
+2025-09-01 12:09:14.148 17178-17178 ActivityThread          com.example.eyetracking              W  Application com.example.eyetracking is suspending. Debugger needs to resume to continue.
+2025-09-01 12:09:14.149 17178-17178 System.out              com.example.eyetracking              I  Sending WAIT chunk
+2025-09-01 12:09:14.149 17178-17178 System.out              com.example.eyetracking              I  Waiting for debugger first packet
+2025-09-01 12:09:14.549 17178-17178 System.out              com.example.eyetracking              I  Debug.suspendAllAndSentVmStart
+2025-09-01 12:09:15.138 17178-17178 System.out              com.example.eyetracking              I  Debug.suspendAllAndSendVmStart, resumed
+2025-09-01 12:09:15.256 17178-21402 AdrenoGLES-0            com.example.eyetracking              I  QUALCOMM build                   : 7867919300, Ibc171b9c87
+                                                                                                    Build Date                       : 04/25/25
+                                                                                                    OpenGL ES Shader Compiler Version: E031.41.03.62
+                                                                                                    Local Branch                     : 
+                                                                                                    Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.13.2.0.11.00.00.856.062
+                                                                                                    Remote Branch                    : NONE
+                                                                                                    Reconstruct Branch               : NOTHING
+2025-09-01 12:09:15.256 17178-21402 AdrenoGLES-0            com.example.eyetracking              I  Build Config                     : S P 14.1.4 AArch64
+2025-09-01 12:09:15.256 17178-21402 AdrenoGLES-0            com.example.eyetracking              I  Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+2025-09-01 12:09:15.256 17178-21402 AdrenoGLES-0            com.example.eyetracking              I  Driver Version                   : 0676.72
+2025-09-01 12:09:15.269 17178-21402 AdrenoGLES-0            com.example.eyetracking              I  PFP: 0x01200161, ME: 0x00000000
+2025-09-01 12:09:15.278 17178-21402 AdrenoUtils             com.example.eyetracking              I  <ReadGpuID:407>: Reading chip ID through GSL
+2025-09-01 12:09:15.290 17178-17178 ple.eyetracking         com.example.eyetracking              I  hiddenapi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app) using reflection: allowed
+2025-09-01 12:09:15.357 17178-17178 libc                    com.example.eyetracking              W  Access denied finding property "persist.vivo.ltw.enabled"
+2025-09-01 12:09:15.426 17178-17178 libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-01 12:09:15.682 17178-21373 ple.eyetracking         com.example.eyetracking              I  Compiler allocated 4343KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+2025-09-01 12:09:15.868 17178-21373 ple.eyetracking         com.example.eyetracking              I  Compiler allocated 7517KB to compile void android.view.ViewRootImpl.performTraversals()
+2025-09-01 12:09:16.526 17178-17178 libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-01 12:09:18.138 17178-17178 ImeTracker              com.example.eyetracking              I  com.example.eyetracking:de62129d: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser true
+2025-09-01 12:09:18.147 17178-17178 AssistStructure         com.example.eyetracking              I  Flattened final assist data: 2316 bytes, containing 1 windows, 11 views
+2025-09-01 12:09:18.236 17178-21440 InteractionJankMonitor  com.example.eyetracking              W  Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.example.eyetracking
+2025-09-01 12:09:18.441 17178-17178 ImeTracker              com.example.eyetracking              I  com.example.eyetracking:de62129d: onShown
+2025-09-01 12:09:20.817 17178-17178 ImeTracker              com.example.eyetracking              I  com.example.eyetracking:f026d325: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_FROM_VIEW fromUser false
+2025-09-01 12:09:21.050 17178-17178 ImeTracker              com.example.eyetracking              I  com.example.eyetracking:b8b9d425: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+2025-09-01 12:09:21.052 17178-17178 ImeTracker              com.example.eyetracking              I  com.example.eyetracking:f026d325: onHidden
+2025-09-01 12:09:21.635 17178-21470 tflite                  com.example.eyetracking              I  Initialized TensorFlow Lite runtime.
+2025-09-01 12:09:21.636 17178-21470 libc                    com.example.eyetracking              W  Access denied finding property "ro.hardware.chipname"
+2025-09-01 12:09:21.638 17178-21470 tflite                  com.example.eyetracking              I  Created TensorFlow Lite XNNPACK delegate for CPU.
+2025-09-01 12:09:21.639 17178-21470 tflite                  com.example.eyetracking              I  Replacing 164 out of 164 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+2025-09-01 12:09:21.650 17178-21470 tflite                  com.example.eyetracking              I  Replacing 471 out of 471 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+2025-09-01 12:09:21.666 17178-21473 tflite                  com.example.eyetracking              I  Replacing 177 out of 182 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 8 partitions for the whole graph.
+2025-09-01 12:09:21.698 17178-21481 CameraManagerGlobal     com.example.eyetracking              I  Connecting to camera service
+2025-09-01 12:09:21.709 17178-17178 libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-01 12:09:21.793 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.793 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.793 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.793 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.793 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.793 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.793 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.794 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.794 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.794 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.794 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.794 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.794 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.794 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.794 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.794 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.795 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.795 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.796 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  mmap ok
+2025-09-01 12:09:21.796 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.796 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.796 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.796 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.796 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.798 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.798 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.798 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.798 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.798 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.798 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.798 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.799 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.799 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.799 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.799 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.799 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.799 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.799 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.800 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.800 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.800 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.800 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.800 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.800 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.800 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.800 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.800 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.801 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.801 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.802 17178-21481 DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-01 12:09:21.802 17178-21481 DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-01 12:09:21.802 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-01 12:09:21.802 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-01 12:09:21.802 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-01 12:09:21.802 17178-21481 VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-01 12:09:21.802 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-01 12:09:21.802 17178-21481 VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-01 12:09:21.871 17178-21481 Camera2CameraInfo       com.example.eyetracking              I  Device Level: INFO_SUPPORTED_HARDWARE_LEVEL_3
+2025-09-01 12:09:21.876 17178-21481 Camera2CameraInfo       com.example.eyetracking              I  Device Level: INFO_SUPPORTED_HARDWARE_LEVEL_3
+2025-09-01 12:09:21.926 17178-17178 libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-01 12:09:21.927 17178-17178 libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-01 12:09:21.955 17178-17178 libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-01 12:09:35.087 17178-21374 ple.eyetracking         com.example.eyetracking              I  Background concurrent copying GC freed 766KB AllocSpace bytes, 7(8428KB) LOS objects, 49% free, 6847KB/13MB, paused 106us,99us total 120.205ms

@@ -1,0 +1,615 @@
+--------- beginning of crash
+--------- beginning of system
+--------- beginning of main
+2025-09-02 12:00:13.570  1326-1326  ple.eyetracking         com.example.eyetracking              I  Late-enabling -Xcheck:jni
+2025-09-02 12:00:13.732  1326-1326  ple.eyetracking         com.example.eyetracking              I  Using CollectorTypeCC GC.
+2025-09-02 12:00:13.850  1326-1326  ple.eyetracking         com.example.eyetracking              E  BBinder_init Processname  <pre-initialized>  
+2025-09-02 12:00:13.850  1326-1326  ple.eyetracking         com.example.eyetracking              E  BBinder_init hasGetProcessName  <pre-initialized>
+2025-09-02 12:00:14.303  1326-1326  ActivityThread          com.example.eyetracking              W  Application com.example.eyetracking is suspending. Debugger needs to resume to continue.
+2025-09-02 12:00:14.304  1326-1326  System.out              com.example.eyetracking              I  Sending WAIT chunk
+2025-09-02 12:00:14.304  1326-1326  System.out              com.example.eyetracking              I  Waiting for debugger first packet
+2025-09-02 12:00:14.705  1326-1326  System.out              com.example.eyetracking              I  Debug.suspendAllAndSentVmStart
+2025-09-02 12:00:15.188  1326-1326  System.out              com.example.eyetracking              I  Debug.suspendAllAndSendVmStart, resumed
+2025-09-02 12:00:15.239  1326-9409  AdrenoGLES-0            com.example.eyetracking              I  QUALCOMM build                   : 7867919300, Ibc171b9c87
+                                                                                                    Build Date                       : 04/25/25
+                                                                                                    OpenGL ES Shader Compiler Version: E031.41.03.62
+                                                                                                    Local Branch                     : 
+                                                                                                    Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.13.2.0.11.00.00.856.062
+                                                                                                    Remote Branch                    : NONE
+                                                                                                    Reconstruct Branch               : NOTHING
+2025-09-02 12:00:15.239  1326-9409  AdrenoGLES-0            com.example.eyetracking              I  Build Config                     : S P 14.1.4 AArch64
+2025-09-02 12:00:15.239  1326-9409  AdrenoGLES-0            com.example.eyetracking              I  Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+2025-09-02 12:00:15.239  1326-9409  AdrenoGLES-0            com.example.eyetracking              I  Driver Version                   : 0676.72
+2025-09-02 12:00:15.247  1326-9409  AdrenoGLES-0            com.example.eyetracking              I  PFP: 0x01200161, ME: 0x00000000
+2025-09-02 12:00:15.267  1326-9409  AdrenoUtils             com.example.eyetracking              I  <ReadGpuID:407>: Reading chip ID through GSL
+2025-09-02 12:00:15.345  1326-1326  ple.eyetracking         com.example.eyetracking              I  hiddenapi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/appcompat/widget/ViewUtils; (domain=app) using reflection: allowed
+2025-09-02 12:00:15.416  1326-1326  libc                    com.example.eyetracking              W  Access denied finding property "persist.vivo.ltw.enabled"
+2025-09-02 12:00:15.489  1326-1326  libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-02 12:00:15.873  1326-9377  ple.eyetracking         com.example.eyetracking              I  Compiler allocated 4343KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+2025-09-02 12:00:16.077  1326-9377  ple.eyetracking         com.example.eyetracking              I  Compiler allocated 7517KB to compile void android.view.ViewRootImpl.performTraversals()
+2025-09-02 12:00:16.626  1326-1326  libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-02 12:00:17.913  1326-1326  ImeTracker              com.example.eyetracking              I  com.example.eyetracking:5dae8aec: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser true
+2025-09-02 12:00:17.927  1326-1326  AssistStructure         com.example.eyetracking              I  Flattened final assist data: 2316 bytes, containing 1 windows, 11 views
+2025-09-02 12:00:18.114  1326-9474  InteractionJankMonitor  com.example.eyetracking              W  Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.example.eyetracking
+2025-09-02 12:00:18.311  1326-1326  ImeTracker              com.example.eyetracking              I  com.example.eyetracking:5dae8aec: onShown
+2025-09-02 12:00:20.317  1326-1326  ImeTracker              com.example.eyetracking              I  com.example.eyetracking:97e9954e: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_FROM_VIEW fromUser false
+2025-09-02 12:00:20.550  1326-1326  ImeTracker              com.example.eyetracking              I  com.example.eyetracking:af84a0a6: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_ON_ANIMATION_STATE_CHANGED fromUser false
+2025-09-02 12:00:20.552  1326-1326  ImeTracker              com.example.eyetracking              I  com.example.eyetracking:97e9954e: onHidden
+2025-09-02 12:00:21.249  1326-9520  tflite                  com.example.eyetracking              I  Initialized TensorFlow Lite runtime.
+2025-09-02 12:00:21.250  1326-9520  libc                    com.example.eyetracking              W  Access denied finding property "ro.hardware.chipname"
+2025-09-02 12:00:21.252  1326-9520  tflite                  com.example.eyetracking              I  Created TensorFlow Lite XNNPACK delegate for CPU.
+2025-09-02 12:00:21.253  1326-9520  tflite                  com.example.eyetracking              I  Replacing 164 out of 164 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+2025-09-02 12:00:21.265  1326-9521  tflite                  com.example.eyetracking              I  Replacing 471 out of 471 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+2025-09-02 12:00:21.283  1326-9518  tflite                  com.example.eyetracking              I  Replacing 177 out of 182 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 8 partitions for the whole graph.
+2025-09-02 12:00:21.321  1326-9532  CameraManagerGlobal     com.example.eyetracking              I  Connecting to camera service
+2025-09-02 12:00:21.332  1326-1326  libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-02 12:00:21.356  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.356  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.356  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.357  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.357  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.357  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.357  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.357  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.357  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.357  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.358  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.358  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.359  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.359  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.359  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.359  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.359  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.359  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.359  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.359  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  mmap ok
+2025-09-02 12:00:21.360  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.360  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.360  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.360  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.360  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.360  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.360  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.360  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.360  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.361  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.361  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.361  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.361  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.361  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.361  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.361  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.361  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.362  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.362  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.362  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.362  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.362  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.362  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.362  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.362  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.363  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.363  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.363  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.363  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.363  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.363  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.363  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.364  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.364  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.364  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.364  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.364  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.364  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.364  1326-9532  DMABUFHEAPS             com.example.eyetracking              I  Using DMA-BUF heap named: system
+2025-09-02 12:00:21.364  1326-9532  DMABUFHEAPS             com.example.eyetracking              E  Unable to allocate from DMA-BUF heap: system: Invalid argument
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Allocate: DmabufHeapAlloc failed with error - Invalid argument
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Allocate: failed ioctl(DMA_BUF_SET_NAME): Bad file descriptor
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByFullName: failed to mmap DMA buffer: Bad file descriptor
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              W  Cannot open file product/camera/jsons/StaticProjectConfig.json!
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  getJsonByName 69:Json File product/camera/jsons/StaticProjectConfig.json Parsed Failed!!!!!
+2025-09-02 12:00:21.364  1326-9532  VivoJsonResourceManager com.example.eyetracking              E  Fail to open StaticProjectConfig.json,root is null
+2025-09-02 12:00:21.433  1326-9532  Camera2CameraInfo       com.example.eyetracking              I  Device Level: INFO_SUPPORTED_HARDWARE_LEVEL_3
+2025-09-02 12:00:21.437  1326-9532  Camera2CameraInfo       com.example.eyetracking              I  Device Level: INFO_SUPPORTED_HARDWARE_LEVEL_3
+2025-09-02 12:00:21.500  1326-1326  libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-02 12:00:21.501  1326-1326  libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-02 12:00:21.529  1326-1326  libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-02 12:00:40.704  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:40.704  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:40.730  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:40.730  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:40.730  1326-9520  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:40.730  1326-9520  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:40.730  1326-9520  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:40.730  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:40.735  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:40.735  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:40.759  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:40.759  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:40.759  1326-9521  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:40.759  1326-9521  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:40.759  1326-9521  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:40.759  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:40.768  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:40.768  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:40.795  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:40.795  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:40.795  1326-9522  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:40.795  1326-9522  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:40.795  1326-9522  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:40.795  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:40.802  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:40.802  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:40.835  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:40.835  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: true
+2025-09-02 12:00:40.835  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  Skipping frame - still processing previous
+2025-09-02 12:00:40.860  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:40.860  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:40.860  1326-9520  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:40.860  1326-9520  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:40.860  1326-9520  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:40.860  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:40.868  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:40.868  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:40.891  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:40.891  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:40.891  1326-9518  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:40.891  1326-9518  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:40.891  1326-9518  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:40.891  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:40.901  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:40.901  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:40.929  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:40.929  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:40.929  1326-9518  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:40.929  1326-9518  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:40.929  1326-9518  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:40.929  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:40.935  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:40.935  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:40.955  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:40.955  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:40.955  1326-9521  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:40.955  1326-9521  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:40.956  1326-9521  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:40.956  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:40.968  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:40.968  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:40.996  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:40.996  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:40.996  1326-9526  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:40.996  1326-9526  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:40.996  1326-9526  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:40.996  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:41.003  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.003  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.030  1326-9524  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:41.030  1326-9524  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:41.030  1326-9524  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:41.030  1326-9524  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:41.030  1326-9524  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:41.030  1326-9524  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:41.033  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.033  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.053  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:41.053  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:41.053  1326-9526  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:41.053  1326-9526  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:41.053  1326-9526  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:41.053  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:41.067  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.067  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.086  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.086  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.100  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.100  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.121  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.121  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.135  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.135  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.161  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.161  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.169  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.169  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.193  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.193  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.200  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.200  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.228  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.228  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.234  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.234  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.272  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.272  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: true
+2025-09-02 12:00:41.272  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  Skipping frame - still processing previous
+2025-09-02 12:00:41.277  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 1
+2025-09-02 12:00:41.277  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              D  Face detected with 478 landmarks
+2025-09-02 12:00:41.277  1326-9522  CalibrationActivity     com.example.eyetracking              V  MediaPipe callback triggered
+2025-09-02 12:00:41.277  1326-9522  CalibrationActivity     com.example.eyetracking              V  onFaceLandmarkerResult - faces: 1, calibrating: false
+2025-09-02 12:00:41.278  1326-9522  CalibrationActivity     com.example.eyetracking              V  Not calibrating - skipping processing
+2025-09-02 12:00:41.278  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              V  Successfully passed result to callback
+2025-09-02 12:00:41.300  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.300  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.327  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.327  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.333  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.333  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.342  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.342  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.369  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.369  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.378  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.378  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.400  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.400  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.409  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.409  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.434  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.435  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.464  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.464  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.469  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.469  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.478  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.478  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.500  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.500  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.509  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.509  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.533  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.533  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.542  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.542  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.566  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.566  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.575  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.575  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.605  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.605  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.619  1326-9519  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.619  1326-9519  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.636  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.636  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.667  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.667  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: true
+2025-09-02 12:00:41.667  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  Skipping frame - still processing previous
+2025-09-02 12:00:41.667  1326-9524  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.667  1326-9524  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.705  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.705  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.735  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.735  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: true
+2025-09-02 12:00:41.735  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  Skipping frame - still processing previous
+2025-09-02 12:00:41.752  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.753  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.767  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.767  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.791  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.791  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.803  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.803  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.836  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.836  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: true
+2025-09-02 12:00:41.836  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  Skipping frame - still processing previous
+2025-09-02 12:00:41.844  1326-9519  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.844  1326-9519  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.867  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.867  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.893  1326-9524  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.893  1326-9524  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.901  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.901  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.909  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.910  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.933  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.933  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.942  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.942  1326-9526  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:41.968  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:41.968  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:41.997  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:41.997  1326-9521  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.000  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.000  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:42.017  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:42.017  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.044  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.044  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:42.071  1326-9524  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:42.071  1326-9524  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.087  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.087  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:42.104  1326-1326  ViewRootImpl            com.example.eyetracking              D  AppSizeAfterRelayout, size: Point(1080, 2392), rotation: ROTATION_0
+2025-09-02 12:00:42.101  1326-1326  ple.eyetracking         com.example.eyetracking              W  type=1400 audit(0.0:1167935): avc:  denied  { read } for  name="u:object_r:vendor_display_prop:s0" dev="tmpfs" ino=462 scontext=u:r:untrusted_app:s0:c45,c257,c512,c768 tcontext=u:object_r:vendor_display_prop:s0 tclass=file permissive=0 app=com.example.eyetracking
+2025-09-02 12:00:42.105  1326-1326  libc                    com.example.eyetracking              W  Access denied finding property "vendor.display.enable_optimal_refresh_rate"
+2025-09-02 12:00:42.115  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:42.115  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.118  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.118  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:42.142  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.142  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: true
+2025-09-02 12:00:42.142  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  Skipping frame - still processing previous
+2025-09-02 12:00:42.145  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:42.145  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.153  1326-1326  ImeFocusController      com.example.eyetracking              V  onWindowFocus: androidx.appcompat.widget.AppCompatEditText{340fd99 VFED..CL. .F....ID 44,308-1036,432 #7f0800be app:id/etAge aid=1073741824} softInputMode=STATE_UNSPECIFIED|ADJUST_PAN
+2025-09-02 12:00:42.179  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.179  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:42.212  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:42.212  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.219  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.219  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:42.248  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.249  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: true
+2025-09-02 12:00:42.249  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  Skipping frame - still processing previous
+2025-09-02 12:00:42.253  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:42.253  1326-9522  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.290  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.290  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:42.321  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:42.321  1326-9520  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.327  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.327  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:42.341  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.341  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: true
+2025-09-02 12:00:42.341  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  Skipping frame - still processing previous
+2025-09-02 12:00:42.478  1326-1326  VRI[Calibr...nActivity] com.example.eyetracking              D  visibilityChanged oldVisibility=true newVisibility=false
+2025-09-02 12:00:42.490  1326-1326  SurfaceViewImpl         com.example.eyetracking              D  Surface destroyed.
+2025-09-02 12:00:42.490  1326-1326  SurfaceViewImpl         com.example.eyetracking              D  Surface closed androidx.camera.core.SurfaceRequest@65c122
+2025-09-02 12:00:42.492  1326-1326  DeferrableSurface       com.example.eyetracking              D  surface closed,  useCount=2 closed=true androidx.camera.core.SurfaceRequest$2@e77c7b3
+2025-09-02 12:00:42.495  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:42.495  1326-9518  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.500  1326-9624  BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:52e00000005,api:4,p:2332,c:1326) dequeueBuffer: BufferQueue has been abandoned
+2025-09-02 12:00:42.551  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.551  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: false
+2025-09-02 12:00:42.562  1326-9384  BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:52e00000005,api:4,p:2332,c:1326) queueBuffer: BufferQueue has been abandoned
+2025-09-02 12:00:42.579  1326-9384  BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:52e00000005,api:4,p:2332,c:1326) queueBuffer: BufferQueue has been abandoned
+2025-09-02 12:00:42.582  1326-1326  ViewRootImpl            com.example.eyetracking              D  AppSizeAfterRelayout, size: Point(1080, 2392), rotation: ROTATION_0
+2025-09-02 12:00:42.604  1326-9619  CalibrationActivity     com.example.eyetracking              V  CameraX frame received - 640x480
+2025-09-02 12:00:42.605  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  processFrame called - initialized: true, processing: true
+2025-09-02 12:00:42.605  1326-9619  MediaPipeEyeTracker     com.example.eyetracking              V  Skipping frame - still processing previous
+2025-09-02 12:00:42.611  1326-1326  DeferrableSurface       com.example.eyetracking              D  surface closed,  useCount=0 closed=true androidx.camera.core.processing.SurfaceEdge$SettableSurface@a7b3117
+2025-09-02 12:00:42.612  1326-1326  DeferrableSurface       com.example.eyetracking              D  Surface terminated[total_surfaces=2, used_surfaces=2](androidx.camera.core.processing.SurfaceEdge$SettableSurface@a7b3117}
+2025-09-02 12:00:42.612  1326-1326  DeferrableSurface       com.example.eyetracking              D  use count-1,  useCount=1 closed=true androidx.camera.core.SurfaceRequest$2@e77c7b3
+2025-09-02 12:00:42.616  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} Use cases [androidx.camera.core.Preview-faf42363-94ff-438e-8e0d-a6a6c3d666e1161003710, androidx.camera.core.ImageAnalysis-c86cda60-6570-4ca1-b40f-b8d0d7bb7927256163103] now DETACHED for camera
+2025-09-02 12:00:42.616  1326-9625  BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:52e00000005,api:4,p:2332,c:1326) queueBuffer: BufferQueue has been abandoned
+2025-09-02 12:00:42.616  1326-9532  UseCaseAttachState      com.example.eyetracking              D  All use case: [] for camera: 1
+2025-09-02 12:00:42.617  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} Resetting Capture Session
+2025-09-02 12:00:42.617  1326-9532  SyncCaptureSessionImpl  com.example.eyetracking              D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@3403301] Session call close()
+2025-09-02 12:00:42.618  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} Releasing session in state OPENED
+2025-09-02 12:00:42.618  1326-9532  Camera2CameraControlImp com.example.eyetracking              D  setActive: isActive = false
+2025-09-02 12:00:42.618  1326-9532  UseCaseAttachState      com.example.eyetracking              D  Active and attached use case: [] for camera: 1
+2025-09-02 12:00:42.635  1326-9532  UseCaseAttachState      com.example.eyetracking              D  Active and attached use case: [] for camera: 1
+2025-09-02 12:00:42.637  1326-1326  DeferrableSurface       com.example.eyetracking              D  surface closed,  useCount=1 closed=true androidx.camera.core.impl.ImmediateSurface@8f2849c
+2025-09-02 12:00:42.640  1326-9532  VideoUsageControl       com.example.eyetracking              D  resetDirectly: mVideoUsage reset!
+2025-09-02 12:00:42.640  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} Closing camera.
+2025-09-02 12:00:42.642  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} Transitioning camera internal state: OPENED --> CLOSING
+2025-09-02 12:00:42.644  1326-9532  CameraStateRegistry     com.example.eyetracking              D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@5a7cb37[id=1]                         CLOSING               
+                                                                                                    Camera@a9fb40c[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2025-09-02 12:00:42.644  1326-9532  CameraStateMachine      com.example.eyetracking              D  New public camera state CameraState{type=CLOSING, error=null} from CLOSING and null
+2025-09-02 12:00:42.644  1326-9532  CameraStateMachine      com.example.eyetracking              D  Publishing new public camera state CameraState{type=CLOSING, error=null}
+2025-09-02 12:00:42.645  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} Resetting Capture Session
+2025-09-02 12:00:42.646  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} Skipping Capture Session state check due to current camera state: CLOSING and previous session status: false
+2025-09-02 12:00:42.646  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} Releasing session in state CLOSING
+2025-09-02 12:00:42.647  1326-9532  SyncCaptureSessionImpl  com.example.eyetracking              D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@3403301] Session call super.close()
+2025-09-02 12:00:42.650  1326-9384  BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:52e00000005,api:4,p:2332,c:1326) queueBuffer: BufferQueue has been abandoned
+2025-09-02 12:00:42.651  1326-9532  UseCaseAttachState      com.example.eyetracking              D  Active and attached use case: [] for camera: 1
+2025-09-02 12:00:42.654  1326-9532  CaptureSession          com.example.eyetracking              D  onSessionFinished()
+2025-09-02 12:00:42.655  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} closing camera
+2025-09-02 12:00:42.656  1326-9532  VivoJavaJsonManager     com.example.eyetracking              D  failed to find appName:com.example.eyetracking from config key:ForBlockBroadcast
+2025-09-02 12:00:42.656  1326-9532  VivoJavaJsonManager     com.example.eyetracking              D  failed to find activity from config key:ForBlockBroadcastActivity
+2025-09-02 12:00:42.656  1326-9532  VivoJavaJsonManager     com.example.eyetracking              D  failed to find activity from config key:ForBlockBroadcastActivity
+2025-09-02 12:00:42.656  1326-9532  VivoJavaJsonManager     com.example.eyetracking              D  failed to find activity from config key:ForBlockBroadcastActivity
+2025-09-02 12:00:42.667  1326-9532  VivoCameraUtils         com.example.eyetracking              V  top app is: com.example.eyetracking, current app: com.example.eyetracking
+2025-09-02 12:00:42.682  1326-9625  BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:52e00000005,api:4,p:2332,c:1326) cancelBuffer: BufferQueue has been abandoned
+2025-09-02 12:00:42.709  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              V  processFaceLandmarkerResult - faces detected: 0
+2025-09-02 12:00:42.709  1326-9525  MediaPipeEyeTracker     com.example.eyetracking              D  No face detected in current frame
+2025-09-02 12:00:42.726  1326-1326  MediaPipeEyeTracker     com.example.eyetracking              D  MediaPipe resources released
+2025-09-02 12:00:42.727  1326-1326  WindowOnBackDispatcher  com.example.eyetracking              W  sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@aea12f1
+2025-09-02 12:00:42.731  1326-9517  TransportR...EventStore com.example.eyetracking              D  Storing event with priority=DEFAULT, name=COREML_ON_DEVICE_SOLUTIONS for destination cct
+2025-09-02 12:00:42.747  1326-9517  TransportR...oScheduler com.example.eyetracking              D  Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+2025-09-02 12:00:42.777  1326-1326  StreamStateObserver     com.example.eyetracking              D  Update Preview stream state to IDLE
+2025-09-02 12:00:42.832  1326-9625  VivoJavaJsonManager     com.example.eyetracking              D  failed to find appName:com.example.eyetracking from config key:mProtakePackages
+2025-09-02 12:00:42.833  1326-9532  DeferrableSurface       com.example.eyetracking              D  use count-1,  useCount=0 closed=true androidx.camera.core.SurfaceRequest$2@e77c7b3
+2025-09-02 12:00:42.833  1326-9532  DeferrableSurface       com.example.eyetracking              D  Surface no longer in use[total_surfaces=2, used_surfaces=1](androidx.camera.core.SurfaceRequest$2@e77c7b3}
+2025-09-02 12:00:42.833  1326-9532  DeferrableSurface       com.example.eyetracking              D  Surface terminated[total_surfaces=1, used_surfaces=1](androidx.camera.core.SurfaceRequest$2@e77c7b3}
+2025-09-02 12:00:42.833  1326-9532  DeferrableSurface       com.example.eyetracking              D  use count-1,  useCount=0 closed=true androidx.camera.core.impl.ImmediateSurface@8f2849c
+2025-09-02 12:00:42.833  1326-9532  DeferrableSurface       com.example.eyetracking              D  Surface no longer in use[total_surfaces=1, used_surfaces=0](androidx.camera.core.impl.ImmediateSurface@8f2849c}
+2025-09-02 12:00:42.833  1326-9532  DeferrableSurface       com.example.eyetracking              D  Surface terminated[total_surfaces=0, used_surfaces=0](androidx.camera.core.impl.ImmediateSurface@8f2849c}
+2025-09-02 12:00:42.834  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} CameraDevice.onClosed()
+2025-09-02 12:00:42.834  1326-9532  Camera2CameraImpl       com.example.eyetracking              D  {Camera@5a7cb37[id=1]} Transitioning camera internal state: CLOSING --> INITIALIZED
+2025-09-02 12:00:42.834  1326-9532  CameraStateRegistry     com.example.eyetracking              D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@5a7cb37[id=1]                         CLOSED                
+                                                                                                    Camera@a9fb40c[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 0 (Max allowed: 1)
+2025-09-02 12:00:42.834  1326-9532  CameraStateMachine      com.example.eyetracking              D  New public camera state CameraState{type=CLOSED, error=null} from CLOSED and null
+2025-09-02 12:00:42.834  1326-9532  CameraStateMachine      com.example.eyetracking              D  Publishing new public camera state CameraState{type=CLOSED, error=null}
+2025-09-02 12:00:42.834  1326-9532  SyncCaptureSessionImpl  com.example.eyetracking              D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@3403301] onClosed()
+2025-09-02 12:00:42.835  1326-1326  SurfaceViewImpl         com.example.eyetracking              D  Safe to release surface.
+2025-09-02 12:00:42.835  1326-1326  ImageReader_JNI         com.example.eyetracking              D  ImageReader_close: ctx[0xb400007aa0069390], 640x480, HalFormat[35]
+2025-09-02 12:00:42.835  1326-1326  ImageReader_JNI         com.example.eyetracking              D  ImageReader_close: ctx[0xb400007aa006a4a0], 640x480, HalFormat[35]
+2025-09-02 12:00:43.085  1326-1326  VRI[UserDe...sActivity] com.example.eyetracking              D  visibilityChanged oldVisibility=true newVisibility=false
+2025-09-02 12:00:43.123  1326-1326  ViewRootImpl            com.example.eyetracking              D  AppSizeAfterRelayout, size: Point(1080, 2392), rotation: ROTATION_0

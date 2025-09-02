@@ -1,0 +1,281 @@
+---------------------------- PROCESS STARTED (10645) for package com.example.eyetracking ----------------------------
+--------- beginning of crash
+--------- beginning of system
+2025-09-01 12:31:16.025 10645-10645 ActivityThread          com.example.eyetracking              W  Application com.example.eyetracking is suspending. Debugger needs to resume to continue.
+2025-09-01 12:31:16.893 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:-1
+2025-09-01 12:31:16.948 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:17.079 10645-10645 OplusCusto...ionManager com.example.eyetracking              E  sInstance is null, start a new sInstance
+2025-09-01 12:31:17.133 10645-10645 ActivityThread          com.example.eyetracking              D  ComponentInfo{com.example.eyetracking/com.example.eyetracking.MainActivity} checkFinished=false 2
+2025-09-01 12:31:17.133 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:17.136 10645-10645 OplusInputMethodUtil    com.example.eyetracking              D  init sDebug to false, init sDebugIme to false, init sAlwaysOn to false
+2025-09-01 12:31:17.136 10645-10645 OplusInputMethodUtil    com.example.eyetracking              D  updateDebugToClass InputMethodManager.DEBUG = false
+2025-09-01 12:31:17.137 10645-10645 OplusInputMethodUtil    com.example.eyetracking              D  updateDebugToClass ImeFocusController.DEBUG = false
+2025-09-01 12:31:17.137 10645-10645 OplusInputMethodUtil    com.example.eyetracking              D  updateDebugToClass InsetsController.DEBUG = false
+2025-09-01 12:31:17.137 10645-10645 OplusInputMethodUtil    com.example.eyetracking              D  updateDebugToClass BaseInputConnection.DEBUG = false
+2025-09-01 12:31:17.161 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:17.196 10645-10645 VRI[MainActivity]       com.example.eyetracking              D  relayoutWindow result, sizeChanged:true, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(720, 1612), mLastSurfaceSize:Point(0, 0), mWidth:-1, mHeight:-1, requestedWidth:720, requestedHeight:1612, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][720,1612] display=[0,0][720,1612] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2025-09-01 12:31:17.197 10645-10645 VRI[MainActivity]       com.example.eyetracking              W  updateBlastSurfaceIfNeeded, surfaceSize:Point(720, 1612), lastSurfaceSize:Point(0, 0), format:-1, blastBufferQueue:null
+2025-09-01 12:31:17.263 10645-10645 VRI[MainActivity]       com.example.eyetracking              W  handleResized, msg:, frameChanged:false, configChanged:false, displayChanged:false, attachedFrameChanged:false, compatScaleChanged:false, pendingDragResizing=false
+2025-09-01 12:31:19.548 10645-10645 OplusInput...erInternal com.example.eyetracking              D  get inputMethodManager extension: com.android.internal.view.IInputMethodManager$Stub$Proxy@d16de24
+2025-09-01 12:31:19.579 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:19.673 10645-10645 ActivityThread          com.example.eyetracking              D  ComponentInfo{com.example.eyetracking/com.example.eyetracking.UserDetailsActivity} checkFinished=false 2
+2025-09-01 12:31:19.674 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:19.683 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:19.707 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  relayoutWindow result, sizeChanged:true, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(720, 1612), mLastSurfaceSize:Point(0, 0), mWidth:-1, mHeight:-1, requestedWidth:720, requestedHeight:1612, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][720,1612] display=[0,0][720,1612] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2025-09-01 12:31:19.707 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  updateBlastSurfaceIfNeeded, surfaceSize:Point(720, 1612), lastSurfaceSize:Point(0, 0), format:-1, blastBufferQueue:null
+2025-09-01 12:31:19.739 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  handleResized, msg:, frameChanged:false, configChanged:false, displayChanged:false, attachedFrameChanged:false, compatScaleChanged:false, pendingDragResizing=false
+2025-09-01 12:31:20.071 10645-10645 VRI[MainActivity]       com.example.eyetracking              D  relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(720, 1612), mLastSurfaceSize:Point(720, 1612), mWidth:720, mHeight:1612, requestedWidth:720, requestedHeight:1612, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][720,1612] display=[0,0][720,1612] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2025-09-01 12:31:20.777 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  handleResized abandoned!
+2025-09-01 12:31:20.792 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  handleResized abandoned!
+2025-09-01 12:31:20.819 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  handleResized abandoned!
+2025-09-01 12:31:24.367 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  handleResized abandoned!
+2025-09-01 12:31:25.102 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  handleResized abandoned!
+2025-09-01 12:31:25.114 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  handleResized abandoned!
+2025-09-01 12:31:25.695 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:26.061 10645-10645 Quality                 com.example.eyetracking              I  ActivityThread: activityStart delay 369 com.example.eyetracking 10645
+2025-09-01 12:31:26.063 10645-10645 ActivityThread          com.example.eyetracking              D  ComponentInfo{com.example.eyetracking/com.example.eyetracking.CalibrationActivity} checkFinished=false 2
+2025-09-01 12:31:26.063 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:26.073 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:26.089 10645-10645 VRI[Calibr...nActivity] com.example.eyetracking              D  relayoutWindow result, sizeChanged:true, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(720, 1612), mLastSurfaceSize:Point(0, 0), mWidth:-1, mHeight:-1, requestedWidth:720, requestedHeight:1612, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][720,1612] display=[0,0][720,1612] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2025-09-01 12:31:26.092 10645-10645 VRI[Calibr...nActivity] com.example.eyetracking              W  updateBlastSurfaceIfNeeded, surfaceSize:Point(720, 1612), lastSurfaceSize:Point(0, 0), format:-1, blastBufferQueue:null
+2025-09-01 12:31:26.114 10645-10645 VRI[Calibr...nActivity] com.example.eyetracking              W  handleResized, msg:, frameChanged:false, configChanged:false, displayChanged:false, attachedFrameChanged:false, compatScaleChanged:false, pendingDragResizing=false
+2025-09-01 12:31:26.454 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(720, 1612), mLastSurfaceSize:Point(720, 1612), mWidth:720, mHeight:1612, requestedWidth:720, requestedHeight:1612, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][720,1612] display=[0,0][720,1612] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2025-09-01 12:31:34.207 10645-10645 VRI[Calibr...nActivity] com.example.eyetracking              D  relayoutWindow result, sizeChanged:false, surfaceControlChanged:false, transformHintChanged:false, mSurfaceSize:Point(720, 1612), mLastSurfaceSize:Point(720, 1612), mWidth:720, mHeight:1612, requestedWidth:720, requestedHeight:1612, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][720,1612] display=[0,0][720,1612] parentFrame=[0,0][720,1612]}, relayoutAsync:true, mSyncSeqId:0
+2025-09-01 12:31:34.207 10645-10645 VRI[Calibr...nActivity] com.example.eyetracking              W  updateBlastSurfaceIfNeeded, surfaceSize:Point(720, 1612), lastSurfaceSize:Point(720, 1612), format:-3, blastBufferQueue:android.graphics.BLASTBufferQueue@f9fa10c
+--------- beginning of main
+2025-09-01 12:31:49.499 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.504 10645-10650 ple.eyetracking         com.example.eyetracking              I  Background concurrent mark compact GC freed 876KB AllocSpace bytes, 4(4816KB) LOS objects, 49% free, 6950KB/13MB, paused 477us,10.236ms total 74.693ms
+2025-09-01 12:31:49.531 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.541 10645-10876 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:49.566 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.608 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.646 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.693 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.695 10645-10879 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:49.749 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.788 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.822 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.867 10645-10883 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:49.868 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.921 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:49.951 10645-10879 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:49.969 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.018 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.049 10645-10882 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:50.074 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.122 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.159 10645-10885 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:50.175 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.222 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.223 10645-10650 ple.eyetracking         com.example.eyetracking              I  Background concurrent mark compact GC freed 920KB AllocSpace bytes, 6(7224KB) LOS objects, 49% free, 6926KB/13MB, paused 389us,10.873ms total 72.030ms
+2025-09-01 12:31:50.243 10645-10880 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:50.272 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.323 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.376 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.386 10645-10885 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:50.407 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.463 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.465 10645-10645 AutofillManager         com.example.eyetracking              V  requestHideFillUi(null): anchor = null
+2025-09-01 12:31:50.495 10645-10878 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:50.496 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.531 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.568 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.603 10645-10880 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:50.615 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.648 10645-10645 ViewRootImplExtImpl     com.example.eyetracking              D  the up motion event handled by client, just return
+2025-09-01 12:31:50.659 10645-10645 CalibrationActivity     com.example.eyetracking              D  Calibration stopped
+2025-09-01 12:31:50.669 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.696 10645-10876 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:50.700 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.739 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.784 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.830 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.833 10645-10879 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:50.867 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.910 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.922 10645-10885 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:50.923 10645-10650 ple.eyetracking         com.example.eyetracking              I  Background concurrent mark compact GC freed 880KB AllocSpace bytes, 7(8428KB) LOS objects, 49% free, 7006KB/13MB, paused 492us,11.432ms total 114.796ms
+2025-09-01 12:31:50.952 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:50.991 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.033 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.036 10645-10879 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:51.069 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.118 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.160 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.162 10645-10876 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:51.200 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.251 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.273 10645-10878 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:51.286 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.334 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.382 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.393 10645-10883 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:51.434 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.491 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.532 10645-10876 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:51.552 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.588 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.633 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.671 10645-10880 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:51.675 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.719 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.721 10645-10650 ple.eyetracking         com.example.eyetracking              I  Background concurrent mark compact GC freed 824KB AllocSpace bytes, 6(7224KB) LOS objects, 49% free, 7018KB/13MB, paused 1.225ms,16.002ms total 88.745ms
+2025-09-01 12:31:51.747 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.757 10645-10883 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:51.802 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.861 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.883 10645-10880 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:51.888 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.933 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:51.967 10645-10880 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:51.972 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.014 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.060 10645-10881 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:52.066 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.095 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.133 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.152 10645-10885 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:52.180 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.220 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.261 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.298 10645-10880 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:52.303 10645-10645 Activity                com.example.eyetracking              D  dispatchKeyEvent to com.example.eyetracking.CalibrationActivity@7584d15 will call onBackPressed
+2025-09-01 12:31:52.304 10645-10645 Activity                com.example.eyetracking              D  com.example.eyetracking.CalibrationActivity@7584d15onBackPressed!
+2025-09-01 12:31:52.305 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.325 10645-10645 callGcSupression        com.example.eyetracking              D  java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[])' on a null object reference
+2025-09-01 12:31:52.327 10645-10645 ScrollOpti...neManager] com.example.eyetracking              D  updateCurrentActivity: mCurrentActivityName=null, isOptEnable=true, isAnimAheadEnable=true, isFrameInsertEnable=true, InsertNum=1, isEnabledForScrollChanged=false
+2025-09-01 12:31:52.333 10645-10655 VRI[UserDe...sActivity] com.example.eyetracking              D  dispatchAppVisibility visible:true
+2025-09-01 12:31:52.344 10645-10645 callGcSupression        com.example.eyetracking              D  java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[])' on a null object reference
+2025-09-01 12:31:52.345 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  setWindowStopped stopped:false
+2025-09-01 12:31:52.350 10645-10645 ScrollOpti...neManager] com.example.eyetracking              D  updateCurrentActivity: mCurrentActivityName=com.example.eyetracking.UserDetailsActivity, isOptEnable=true, isAnimAheadEnable=true, isFrameInsertEnable=true, InsertNum=1, isEnabledForScrollChanged=false
+2025-09-01 12:31:52.350 10645-10645 ActivityThread          com.example.eyetracking              D  ComponentInfo{com.example.eyetracking/com.example.eyetracking.UserDetailsActivity} checkFinished=false 2
+2025-09-01 12:31:52.350 10645-10645 ResourcesManagerExtImpl com.example.eyetracking              D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2025-09-01 12:31:52.351 10645-10645 AutofillManager         com.example.eyetracking              V  ignoring notifyViewEntered(flags=0, view=1073741824) on state FINISHED because view was already entered: {1073741824, 1073741825, 1073741826, 1073741827, 1073741828}
+2025-09-01 12:31:52.358 10645-10645 ViewRootImplExtImpl     com.example.eyetracking              D  wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=360, relayoutAsync=false, flags=0, newFlags=23592960, residentWS=false, title=com.example.eyetracking/com.example.eyetracking.UserDetailsActivity
+2025-09-01 12:31:52.370 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(720, 1612), mLastSurfaceSize:Point(720, 1612), mWidth:720, mHeight:1612, requestedWidth:720, requestedHeight:1612, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][720,1612] display=[0,0][720,1612] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2025-09-01 12:31:52.370 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  updateBlastSurfaceIfNeeded, surfaceSize:Point(720, 1612), lastSurfaceSize:Point(720, 1612), format:-1, blastBufferQueue:null
+2025-09-01 12:31:52.371 10645-10645 BufferQueueConsumer     com.example.eyetracking              D  [](id:299500000006,api:0,p:-1,c:10645) connect: controlledByApp=false
+2025-09-01 12:31:52.375 10645-10645 SurfaceControl          com.example.eyetracking              I   setExtendedRangeBrightness sc=Surface(name=com.example.eyetracking/com.example.eyetracking.UserDetailsActivity)/@0x4b3368f,currentBufferRatio=1.0,desiredRatio=1.0
+2025-09-01 12:31:52.393 10645-10671 BLASTBufferQueue        com.example.eyetracking              D  [VRI[UserDetailsActivity][com.example.eyetracking/com.example.eyetracking.UserDetailsActivity]#4](f:0,a:1) acquireNextBufferLocked size=720x1612 mFrameNumber=1 applyTransaction=true mTimestamp=983834275998409(auto) mPendingTransactions.size=0 graphicBufferId=45719926865957 transform=0
+2025-09-01 12:31:52.393 10645-10671 VRI[UserDe...sActivity] com.example.eyetracking              D  Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+2025-09-01 12:31:52.394 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  draw finished. seqId=0
+2025-09-01 12:31:52.394 10645-10645 ViewRootImplExtImpl     com.example.eyetracking              D  setMaxDequeuedBufferCount: 2
+2025-09-01 12:31:52.395 10645-10645 VRI[Calibr...nActivity] com.example.eyetracking              D  onFocusEvent false
+2025-09-01 12:31:52.399 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.400 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.441 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.458 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  onFocusEvent true
+2025-09-01 12:31:52.515 10645-10879 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:52.517 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.530 10645-10650 ple.eyetracking         com.example.eyetracking              I  Background concurrent mark compact GC freed 1004KB AllocSpace bytes, 6(7224KB) LOS objects, 49% free, 8282KB/16MB, paused 2.186ms,20.584ms total 246.525ms
+2025-09-01 12:31:52.560 10645-10645 callGcSupression        com.example.eyetracking              D  java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[])' on a null object reference
+2025-09-01 12:31:52.560 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              W  handleResized abandoned!
+2025-09-01 12:31:52.562 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.595 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.611 10645-10878 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:52.635 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.659 10645-10987 VRI[Calibr...nActivity] com.example.eyetracking              D  dispatchAppVisibility visible:false
+2025-09-01 12:31:52.660 10645-10645 VRI[Calibr...nActivity] com.example.eyetracking              D  visibilityChanged oldVisibility=true newVisibility=false
+2025-09-01 12:31:52.670 10645-10645 SurfaceView             com.example.eyetracking              I  6420192 surfaceDestroyed
+2025-09-01 12:31:52.670 10645-10645 SurfaceViewImpl         com.example.eyetracking              D  Surface destroyed.
+2025-09-01 12:31:52.671 10645-10645 SurfaceViewImpl         com.example.eyetracking              D  Surface closed androidx.camera.core.SurfaceRequest@36167ae
+2025-09-01 12:31:52.671 10645-10645 DeferrableSurface       com.example.eyetracking              D  surface closed,  useCount=2 closed=true androidx.camera.core.SurfaceRequest$2@ca4594f
+2025-09-01 12:31:52.672 10645-10645 BLASTBufferQueue        com.example.eyetracking              D  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3](f:0,a:1) destructor()
+2025-09-01 12:31:52.672 10645-10645 BufferQueueConsumer     com.example.eyetracking              D  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:299500000005,api:4,p:1811,c:10645) disconnect
+2025-09-01 12:31:52.675 10645-10657 BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:299500000005,api:4,p:1811,c:10645) dequeueBuffer: BufferQueue has been abandoned
+2025-09-01 12:31:52.677 10645-10671 SurfaceView             com.example.eyetracking              D  249257353positionLost mSurfaceControl is null return;
+2025-09-01 12:31:52.678 10645-10645 HWUI                    com.example.eyetracking              D  RenderProxy::destroy: this=0xb4000071855d3700, mContext=0xb4000070d6393340
+2025-09-01 12:31:52.678 10645-10671 HWUI                    com.example.eyetracking              D  SkiaOpenGLPipeline::setSurface: this=0xb4000070d724ba00, surface=NULL
+2025-09-01 12:31:52.681 10645-10645 ViewRootImplExtImpl     com.example.eyetracking              D  wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=360, relayoutAsync=false, flags=0, newFlags=23592960, residentWS=false, title=com.example.eyetracking/com.example.eyetracking.CalibrationActivity
+2025-09-01 12:31:52.686 10645-10645 VRI[Calibr...nActivity] com.example.eyetracking              D  relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(720, 1612), mLastSurfaceSize:Point(720, 1612), mWidth:720, mHeight:1612, requestedWidth:720, requestedHeight:1612, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][720,1612] display=[0,0][720,1612] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2025-09-01 12:31:52.686 10645-10645 BLASTBufferQueue        com.example.eyetracking              D  [VRI[CalibrationActivity][com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#2](f:0,a:3) destructor()
+2025-09-01 12:31:52.686 10645-10645 BufferQueueConsumer     com.example.eyetracking              D  [VRI[CalibrationActivity][com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#2(BLAST Consumer)2](id:299500000002,api:0,p:-1,c:10645) disconnect
+2025-09-01 12:31:52.691 10645-10645 DeferrableSurface       com.example.eyetracking              D  surface closed,  useCount=0 closed=true androidx.camera.core.processing.SurfaceEdge$SettableSurface@aa0f3
+2025-09-01 12:31:52.692 10645-10645 DeferrableSurface       com.example.eyetracking              D  Surface terminated[total_surfaces=2, used_surfaces=2](androidx.camera.core.processing.SurfaceEdge$SettableSurface@aa0f3}
+2025-09-01 12:31:52.692 10645-10645 DeferrableSurface       com.example.eyetracking              D  use count-1,  useCount=1 closed=true androidx.camera.core.SurfaceRequest$2@ca4594f
+2025-09-01 12:31:52.693 10645-10645 callGcSupression        com.example.eyetracking              D  java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[])' on a null object reference
+2025-09-01 12:31:52.694 10645-10645 VRI[Calibr...nActivity] com.example.eyetracking              D  setWindowStopped stopped:true
+2025-09-01 12:31:52.696 10645-11135 CalibrationActivity     com.example.eyetracking              D  CameraX frame received
+2025-09-01 12:31:52.699 10645-10645 DeferrableSurface       com.example.eyetracking              D  surface closed,  useCount=1 closed=true androidx.camera.core.impl.ImmediateSurface@9a116c8
+2025-09-01 12:31:52.703 10645-10891 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} Use cases [androidx.camera.core.Preview-f8d46fd0-7800-4b75-94fd-5bd0496649bf135007605, androidx.camera.core.ImageAnalysis-b93fb708-5506-4c8c-ae1c-6734540a8035112824586] now DETACHED for camera
+2025-09-01 12:31:52.704 10645-10891 UseCaseAttachState      com.example.eyetracking              D  All use case: [] for camera: 1
+2025-09-01 12:31:52.707 10645-10891 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} Resetting Capture Session
+2025-09-01 12:31:52.708 10645-10891 SyncCaptureSessionImpl  com.example.eyetracking              D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@83e9641] Session call close()
+2025-09-01 12:31:52.709 10645-10891 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} Releasing session in state OPENED
+2025-09-01 12:31:52.710 10645-10891 Camera2CameraControlImp com.example.eyetracking              D  setActive: isActive = false
+2025-09-01 12:31:52.710 10645-10891 UseCaseAttachState      com.example.eyetracking              D  Active and attached use case: [] for camera: 1
+2025-09-01 12:31:52.717 10645-10891 UseCaseAttachState      com.example.eyetracking              D  Active and attached use case: [] for camera: 1
+2025-09-01 12:31:52.720 10645-10657 BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:299500000005,api:4,p:1811,c:10645) queueBuffer: BufferQueue has been abandoned
+2025-09-01 12:31:52.722 10645-10891 VideoUsageControl       com.example.eyetracking              D  resetDirectly: mVideoUsage reset!
+2025-09-01 12:31:52.722 10645-10891 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} Closing camera.
+2025-09-01 12:31:52.722 10645-10891 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} Transitioning camera internal state: OPENED --> CLOSING
+2025-09-01 12:31:52.723 10645-10891 CameraStateRegistry     com.example.eyetracking              D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@739002[id=1]                          CLOSING               
+                                                                                                    Camera@6f959b[id=0]                          UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2025-09-01 12:31:52.723 10645-10891 CameraStateMachine      com.example.eyetracking              D  New public camera state CameraState{type=CLOSING, error=null} from CLOSING and null
+2025-09-01 12:31:52.723 10645-10891 CameraStateMachine      com.example.eyetracking              D  Publishing new public camera state CameraState{type=CLOSING, error=null}
+2025-09-01 12:31:52.723 10645-10891 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} Resetting Capture Session
+2025-09-01 12:31:52.724 10645-10891 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} Skipping Capture Session state check due to current camera state: CLOSING and previous session status: false
+2025-09-01 12:31:52.724 10645-10891 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} Releasing session in state CLOSING
+2025-09-01 12:31:52.725 10645-10891 SyncCaptureSessionImpl  com.example.eyetracking              D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@83e9641] Session call super.close()
+2025-09-01 12:31:52.725 10645-10891 UseCaseAttachState      com.example.eyetracking              D  Active and attached use case: [] for camera: 1
+2025-09-01 12:31:52.729 10645-10891 CaptureSession          com.example.eyetracking              D  onSessionFinished()
+2025-09-01 12:31:52.733 10645-10891 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} closing camera
+2025-09-01 12:31:52.739 10645-10876 MediaPipeEyeTracker     com.example.eyetracking              D  Face landmarks detected: 478 landmarks
+2025-09-01 12:31:52.749 10645-10654 BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:299500000005,api:4,p:1811,c:10645) cancelBuffer: BufferQueue has been abandoned
+2025-09-01 12:31:52.759 10645-10654 BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:299500000005,api:4,p:1811,c:10645) queueBuffer: BufferQueue has been abandoned
+2025-09-01 12:31:52.769 10645-10654 BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:299500000005,api:4,p:1811,c:10645) cancelBuffer: BufferQueue has been abandoned
+2025-09-01 12:31:52.771 10645-10654 BufferQueueProducer     com.example.eyetracking              E  [SurfaceView[com.example.eyetracking/com.example.eyetracking.CalibrationActivity]#3(BLAST Consumer)3](id:299500000005,api:4,p:1811,c:10645) cancelBuffer: BufferQueue has been abandoned
+2025-09-01 12:31:52.773 10645-10886 libMEOW                 com.example.eyetracking              D  meow delete tls: 0xb4000070fde98740
+2025-09-01 12:31:52.779 10645-10645 MediaPipeEyeTracker     com.example.eyetracking              D  MediaPipe resources released
+2025-09-01 12:31:52.779 10645-10645 OplusScrollToTopManager com.example.eyetracking              D  com.example.eyetracking/com.example.eyetracking.CalibrationActivity,window dying
+2025-09-01 12:31:52.780 10645-10645 OplusScrollToTopManager com.example.eyetracking              D  com.example.eyetracking/com.example.eyetracking.CalibrationActivity,unregisterSystemUIBroadcastReceiver 
+2025-09-01 12:31:52.780 10645-10645 OplusScrollToTopManager com.example.eyetracking              D  com.example.eyetracking/com.example.eyetracking.CalibrationActivity, unregisterSystemUIBroadcastReceiver failed java.lang.IllegalArgumentException: Receiver not registered: android.view.OplusScrollToTopManager$2@45935ec
+2025-09-01 12:31:52.781 10645-10645 WindowOnBackDispatcher  com.example.eyetracking              W  sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@c5c52d8
+2025-09-01 12:31:52.785 10645-10645 HWUI                    com.example.eyetracking              D  RenderProxy::destroy: this=0xb4000071855d3700, mContext=0xb4000070d6393340
+2025-09-01 12:31:52.785 10645-10671 HWUI                    com.example.eyetracking              D  SkiaOpenGLPipeline::setSurface: this=0xb4000070d724ba00, surface=NULL
+2025-09-01 12:31:52.787 10645-10874 TransportR...EventStore com.example.eyetracking              D  Storing event with priority=DEFAULT, name=COREML_ON_DEVICE_SOLUTIONS for destination cct
+2025-09-01 12:31:52.800 10645-10645 StreamStateObserver     com.example.eyetracking              D  Update Preview stream state to IDLE
+2025-09-01 12:31:52.804 10645-10874 TransportR...oScheduler com.example.eyetracking              D  Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+2025-09-01 12:31:52.999 10645-11020 DeferrableSurface       com.example.eyetracking              D  use count-1,  useCount=0 closed=true androidx.camera.core.SurfaceRequest$2@ca4594f
+2025-09-01 12:31:52.999 10645-11020 DeferrableSurface       com.example.eyetracking              D  Surface no longer in use[total_surfaces=2, used_surfaces=1](androidx.camera.core.SurfaceRequest$2@ca4594f}
+2025-09-01 12:31:52.999 10645-11020 DeferrableSurface       com.example.eyetracking              D  Surface terminated[total_surfaces=1, used_surfaces=1](androidx.camera.core.SurfaceRequest$2@ca4594f}
+2025-09-01 12:31:53.000 10645-11020 DeferrableSurface       com.example.eyetracking              D  use count-1,  useCount=0 closed=true androidx.camera.core.impl.ImmediateSurface@9a116c8
+2025-09-01 12:31:53.000 10645-10645 SurfaceViewImpl         com.example.eyetracking              D  Safe to release surface.
+2025-09-01 12:31:53.000 10645-11020 DeferrableSurface       com.example.eyetracking              D  Surface no longer in use[total_surfaces=1, used_surfaces=0](androidx.camera.core.impl.ImmediateSurface@9a116c8}
+2025-09-01 12:31:53.001 10645-11020 DeferrableSurface       com.example.eyetracking              D  Surface terminated[total_surfaces=0, used_surfaces=0](androidx.camera.core.impl.ImmediateSurface@9a116c8}
+2025-09-01 12:31:53.001 10645-10645 BufferQueueConsumer     com.example.eyetracking              D  [ImageReader-640x480f23m4-10645-0](id:299500000003,api:0,p:-1,c:10645) disconnect
+2025-09-01 12:31:53.001 10645-10645 BufferQueueConsumer     com.example.eyetracking              D  [ImageReader-640x480f23m4-10645-1](id:299500000004,api:0,p:-1,c:10645) disconnect
+2025-09-01 12:31:53.001 10645-11020 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} CameraDevice.onClosed()
+2025-09-01 12:31:53.002 10645-11020 Camera2CameraImpl       com.example.eyetracking              D  {Camera@739002[id=1]} Transitioning camera internal state: CLOSING --> INITIALIZED
+2025-09-01 12:31:53.003 10645-11020 CameraStateRegistry     com.example.eyetracking              D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@739002[id=1]                          CLOSED                
+                                                                                                    Camera@6f959b[id=0]                          UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 0 (Max allowed: 1)
+2025-09-01 12:31:53.003 10645-11020 CameraStateMachine      com.example.eyetracking              D  New public camera state CameraState{type=CLOSED, error=null} from CLOSED and null
+2025-09-01 12:31:53.004 10645-11020 CameraStateMachine      com.example.eyetracking              D  Publishing new public camera state CameraState{type=CLOSED, error=null}
+2025-09-01 12:31:53.004 10645-11020 SyncCaptureSessionImpl  com.example.eyetracking              D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@83e9641] onClosed()
+2025-09-01 12:31:53.461 10645-10674 OplusScrollToTopManager com.example.eyetracking              D  com.example.eyetracking/com.example.eyetracking.UserDetailsActivity,This com.android.internal.policy.DecorView{d9edca8 V.E...... R....... 0,0-720,1612 aid=1 alpha=1.0 viewInfo = }[UserDetailsActivity] change focus to true
+2025-09-01 12:31:53.764 10645-10645 callGcSupression        com.example.eyetracking              D  java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[])' on a null object reference
+2025-09-01 12:31:53.779 10645-10645 ScrollOpti...neManager] com.example.eyetracking              D  updateCurrentActivity: mCurrentActivityName=null, isOptEnable=true, isAnimAheadEnable=true, isFrameInsertEnable=true, InsertNum=1, isEnabledForScrollChanged=false
+2025-09-01 12:31:53.790 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  onFocusEvent false
+2025-09-01 12:31:54.357 10645-10657 VRI[UserDe...sActivity] com.example.eyetracking              D  dispatchAppVisibility visible:false
+2025-09-01 12:31:54.358 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  visibilityChanged oldVisibility=true newVisibility=false
+2025-09-01 12:31:54.362 10645-10645 HWUI                    com.example.eyetracking              D  RenderProxy::destroy: this=0xb400007185225900, mContext=0xb400007180775280
+2025-09-01 12:31:54.362 10645-10671 HWUI                    com.example.eyetracking              D  SkiaOpenGLPipeline::setSurface: this=0xb400007180dab740, surface=NULL
+2025-09-01 12:31:54.364 10645-10645 ViewRootImplExtImpl     com.example.eyetracking              D  wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=360, relayoutAsync=false, flags=0, newFlags=23592960, residentWS=false, title=com.example.eyetracking/com.example.eyetracking.UserDetailsActivity
+2025-09-01 12:31:54.370 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(720, 1612), mLastSurfaceSize:Point(720, 1612), mWidth:720, mHeight:1612, requestedWidth:720, requestedHeight:1612, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][720,1612] display=[0,0][720,1612] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2025-09-01 12:31:54.371 10645-10645 BLASTBufferQueue        com.example.eyetracking              D  [VRI[UserDetailsActivity][com.example.eyetracking/com.example.eyetracking.UserDetailsActivity]#4](f:0,a:1) destructor()
+2025-09-01 12:31:54.371 10645-10645 BufferQueueConsumer     com.example.eyetracking              D  [VRI[UserDetailsActivity][com.example.eyetracking/com.example.eyetracking.UserDetailsActivity]#4(BLAST Consumer)4](id:299500000006,api:0,p:-1,c:10645) disconnect
+2025-09-01 12:31:54.376 10645-10645 callGcSupression        com.example.eyetracking              D  java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[])' on a null object reference
+2025-09-01 12:31:54.377 10645-10645 VRI[UserDe...sActivity] com.example.eyetracking              D  setWindowStopped stopped:true
+2025-09-01 12:31:54.379 10645-10645 AutofillManager         com.example.eyetracking              V  updateSessionLocked(): id=null, bounds=null, value=null, action=5, flags=0
+2025-09-01 12:31:54.456 10645-10671 HWUI                    com.example.eyetracking              D  SkiaOpenGLPipeline::setSurface: this=0xb4000070d724ba00, surface=NULL
+2025-09-01 12:31:54.793 10645-10674 OplusScrollToTopManager com.example.eyetracking              D  com.example.eyetracking/com.example.eyetracking.UserDetailsActivity,This com.android.internal.policy.DecorView{d9edca8 I.E...... R.....ID 0,0-720,1612 aid=1 alpha=1.0 viewInfo = }[UserDetailsActivity] change focus to false

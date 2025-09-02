@@ -65,11 +65,27 @@ class CalibrationActivity : AppCompatActivity() {
 
         // Initialize MediaPipe eye tracker
         eyeTracker = MediaPipeEyeTracker(this) { result, imageWidth, imageHeight ->
+            Log.v(TAG, "MediaPipe callback triggered")
             onFaceLandmarkerResult(result, imageWidth, imageHeight)
         }
 
         setupUI()
         startCamera()
+
+        // Make sure button is visible and enabled
+        binding.btnStartCalibration.apply {
+            visibility = View.VISIBLE
+            isEnabled = true
+            isClickable = true
+            bringToFront()
+            setOnClickListener {
+                Log.d(TAG, "Button clicked - immediate feedback")
+                Toast.makeText(this@CalibrationActivity, "Button clicked!", Toast.LENGTH_SHORT).show()
+                binding.btnStartCalibration.text = "Clicked!"
+                startCalibration()
+            }
+            Log.d(TAG, "Button state - visible: ${visibility == View.VISIBLE}, enabled: $isEnabled")
+        }
 
         // Log overlay dimensions after layout
         binding.calibrationOverlay.post {
@@ -80,17 +96,16 @@ class CalibrationActivity : AppCompatActivity() {
     }
 
     private fun setupUI() {
-        binding.btnStartCalibration.setOnClickListener {
-            if (isCalibrating) {
-                stopCalibration()
-            } else {
-                startCalibration()
-            }
-        }
+        Log.d(TAG, "Setting up UI - button listeners")
+        
+        // Button click listener moved to onCreate for better initialization
 
         binding.btnStopCalibration.setOnClickListener {
+            Log.d(TAG, "Stop calibration button clicked")
             stopCalibration()
         }
+        
+        Log.d(TAG, "UI setup complete")
     }
 
     private fun startCamera() {
@@ -106,7 +121,7 @@ class CalibrationActivity : AppCompatActivity() {
                 .build()
                 .also {
                     it.setAnalyzer(cameraExecutor) { imageProxy ->
-                        Log.d(TAG, "CameraX frame received")
+                        Log.v(TAG, "CameraX frame received - ${imageProxy.width}x${imageProxy.height}")
                         eyeTracker.processFrame(imageProxy)
                         // imageProxy.close() // eyeTracker.processFrame should handle closing
                     }
@@ -225,7 +240,10 @@ class CalibrationActivity : AppCompatActivity() {
     }
 
     private fun onFaceLandmarkerResult(result: FaceLandmarkerResult, imageWidth: Int, imageHeight: Int) {
+        Log.v(TAG, "onFaceLandmarkerResult - faces: ${result.faceLandmarks().size}, calibrating: $isCalibrating")
+        
         if (result.faceLandmarks().isEmpty()) {
+            Log.d(TAG, "No face detected - showing status message")
             runOnUiThread {
                 binding.faceDetectionStatus.visibility = View.VISIBLE
                 binding.predictedGazeView.visibility = View.GONE
@@ -240,10 +258,14 @@ class CalibrationActivity : AppCompatActivity() {
             }
         }
 
-        if (!isCalibrating) return
+        if (!isCalibrating) {
+            Log.v(TAG, "Not calibrating - skipping processing")
+            return
+        }
 
         try {
             if (startWidth == 0.0 && startHeight == 0.0) {
+                Log.d(TAG, "Initializing head tracking")
                 initializeHeadTracking(result)
             }
 
@@ -269,48 +291,65 @@ class CalibrationActivity : AppCompatActivity() {
             
             val (overlayWidth, overlayHeight) = dimensions
 
+            // Get prediction or use default center position
             val predictedGaze = calibrator.predict(features)
-            if (predictedGaze != null) {
-                gazeBuffer.add(predictedGaze)
-                if (gazeBuffer.size > bufferSize) {
-                    gazeBuffer.removeAt(0)
-                }
+            val displayGaze = predictedGaze ?: Pair(0.5f, 0.5f)  // Default to center if null
+            
+            // Always process gaze for visual feedback
+            gazeBuffer.add(displayGaze)
+            if (gazeBuffer.size > bufferSize) {
+                gazeBuffer.removeAt(0)
+            }
 
-                val smoothedGaze = if (gazeBuffer.isNotEmpty()) {
-                    val avgX = gazeBuffer.map { it.first }.average()
-                    val avgY = gazeBuffer.map { it.second }.average()
-                    Pair(avgX.toFloat(), avgY.toFloat())
-                } else {
-                    predictedGaze
-                }
+            val smoothedGaze = if (gazeBuffer.isNotEmpty()) {
+                val avgX = gazeBuffer.map { it.first }.average()
+                val avgY = gazeBuffer.map { it.second }.average()
+                Pair(avgX.toFloat(), avgY.toFloat())
+            } else {
+                displayGaze
+            }
 
-                // Ensure both gaze and target are in the same (screen) coordinate space
-                val gazeOnScreen = Pair(
-                    smoothedGaze.first * overlayWidth,
-                    smoothedGaze.second * overlayHeight
-                )
-                val targetPoint = calibrator.getCurrentPoint(overlayWidth, overlayHeight)
+            // Ensure both gaze and target are in the same (screen) coordinate space
+            val gazeOnScreen = Pair(
+                smoothedGaze.first * overlayWidth,
+                smoothedGaze.second * overlayHeight
+            )
+            val targetPoint = calibrator.getCurrentPoint(overlayWidth, overlayHeight)
 
-                runOnUiThread {
-                    binding.predictedGazeView.x = gazeOnScreen.first - (binding.predictedGazeView.width / 2)
-                    binding.predictedGazeView.y = gazeOnScreen.second - (binding.predictedGazeView.height / 2)
-                    binding.calibrationOverlay.updateCalibrationPoint(targetPoint.first, targetPoint.second)
-                }
+            // Always update UI to show blue circle
+            runOnUiThread {
+                binding.predictedGazeView.visibility = View.VISIBLE  // Ensure visible
+                binding.predictedGazeView.x = gazeOnScreen.first - (binding.predictedGazeView.width / 2)
+                binding.predictedGazeView.y = gazeOnScreen.second - (binding.predictedGazeView.height / 2)
+                binding.calibrationOverlay.updateCalibrationPoint(targetPoint.first, targetPoint.second)
+            
+            Log.d(TAG, "Gaze: $gazeOnScreen, Target: $targetPoint, Predicted: $predictedGaze")
 
-                val distance = euclideanDistance(gazeOnScreen, targetPoint)
-                val threshold = 0.1 * overlayWidth.toDouble() // 10% of screen width as threshold
+            // Calculate distance for proximity check
+            val distance = euclideanDistance(gazeOnScreen, targetPoint)
+            val threshold = 0.1 * overlayWidth.toDouble() // 10% of screen width as threshold
 
-                Log.d(TAG, "Gaze: $gazeOnScreen, Target: $targetPoint, Dist: $distance, Thresh: $threshold")
+            Log.d(TAG, "Distance: $distance, Threshold: $threshold, ProximityCounter: $proximityCounter")
 
-                if (distance < threshold) {
+            // Only collect data and check proximity if model has made a real prediction
+            if (predictedGaze != null && distance < threshold) {
+                    Log.d(TAG, "Within threshold - collecting data, proximityCounter: $proximityCounter")
+                    // CRITICAL FIX: Add data on EVERY frame while near target (like JavaScript)
+                    calibrator.add(features, targetPoint)
+                    
                     proximityCounter++
                     if (proximityCounter >= proximityThreshold) {
-                        // Only add data point once gaze is stable
-                        calibrator.add(features, targetPoint)
+                        Log.d(TAG, "Proximity threshold reached - moving to next point")
+                        // Move to next point only after collecting enough samples
                         moveToNextCalibrationPoint()
                         proximityCounter = 0
                     }
                 } else {
+                    if (predictedGaze == null) {
+                        Log.v(TAG, "Prediction is null - model not trained yet")
+                    } else {
+                        Log.v(TAG, "Outside threshold - distance: $distance")
+                    }
                     proximityCounter = 0
                 }
             }

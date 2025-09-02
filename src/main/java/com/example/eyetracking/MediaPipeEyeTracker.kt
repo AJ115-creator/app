@@ -94,14 +94,17 @@ class MediaPipeEyeTracker(
      * Process camera frame through MediaPipe Face Landmarker
      */
     fun processFrame(imageProxy: ImageProxy) {
+        Log.v(TAG, "processFrame called - initialized: $isInitialized, processing: $isProcessing")
+        
         if (!isInitialized || faceLandmarker == null) {
-            Log.w(TAG, "Face Landmarker not initialized")
+            Log.w(TAG, "Face Landmarker not initialized - faceLandmarker is null: ${faceLandmarker == null}")
             imageProxy.close()
             return
         }
 
         if (isProcessing) {
             // Skip frame if still processing previous one
+            Log.v(TAG, "Skipping frame - still processing previous")
             imageProxy.close()
             return
         }
@@ -132,16 +135,18 @@ class MediaPipeEyeTracker(
         image: MPImage
     ) {
         isProcessing = false
+        Log.v(TAG, "processFaceLandmarkerResult - faces detected: ${result.faceLandmarks().size}")
 
         if (result.faceLandmarks().isEmpty()) {
-            Log.d(TAG, "No face detected")
+            Log.d(TAG, "No face detected in current frame")
             return
         }
 
         try {
+            Log.d(TAG, "Face detected with ${result.faceLandmarks()[0].size} landmarks")
             // Pass the raw result to the callback for proper feature extraction
             onResult(result, image.width, image.height)
-            Log.d(TAG, "Face landmarks detected: ${result.faceLandmarks()[0].size} landmarks")
+            Log.v(TAG, "Successfully passed result to callback")
         } catch (e: Exception) {
             Log.e(TAG, "Error processing face landmarks", e)
         }

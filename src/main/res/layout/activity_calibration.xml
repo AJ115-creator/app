@@ -46,14 +46,15 @@
     <!-- Start calibration button -->
     <Button
         android:id="@+id/btnStartCalibration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="112dp"
-        android:background="@drawable/button_background"
+        android:backgroundTint="#6200ee"
         android:text="Start Calibration"
         android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:elevation="8dp" />
 
     <!-- Stop calibration button -->
     <Button
