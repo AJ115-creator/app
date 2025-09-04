@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <!-- Camera top half with Overlay -->
     <FrameLayout
+        android:id="@+id/cameraContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/metricsGrid">
 
         <androidx.camera.view.PreviewView
             android:id="@+id/trackingPreview"
@@ -31,7 +37,11 @@
         android:columnCount="2"
         android:rowCount="3"
         android:padding="8dp"
-        android:background="#f5f5f5">
+        android:background="#f5f5f5"
+        app:layout_constraintTop_toBottomOf="@+id/cameraContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonContainer">
 
         <!-- 1. Gaze Duration -->
         <LinearLayout
@@ -47,6 +57,8 @@
             android:gravity="center">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="👁️ Gaze Duration"
                 android:textStyle="bold"
                 android:textSize="14sp"
@@ -54,12 +66,16 @@
 
             <TextView
                 android:id="@+id/tvGazeDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="22sp"
                 android:textColor="@color/purple_500"
                 android:layout_marginTop="4dp" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="ms"
                 android:textSize="12sp"
                 android:textColor="@android:color/darker_gray" />
@@ -80,6 +96,8 @@
             android:gravity="center">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="⏱️ Dwell Time"
                 android:textStyle="bold"
                 android:textSize="14sp"
@@ -87,12 +105,16 @@
 
             <TextView
                 android:id="@+id/tvDwellTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="22sp"
                 android:textColor="@color/purple_500"
                 android:layout_marginTop="4dp" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="ms"
                 android:textSize="12sp"
                 android:textColor="@android:color/darker_gray" />
@@ -113,6 +135,8 @@
             android:gravity="center">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="🔄 Saccade Length"
                 android:textStyle="bold"
                 android:textSize="14sp"
@@ -120,12 +144,16 @@
 
             <TextView
                 android:id="@+id/tvSaccadeLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="0.0"
                 android:textSize="22sp"
                 android:textColor="@color/purple_500"
                 android:layout_marginTop="4dp" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="px"
                 android:textSize="12sp"
                 android:textColor="@android:color/darker_gray" />
@@ -146,6 +174,8 @@
             android:gravity="center">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="🚫 Distractor Saccades"
                 android:textStyle="bold"
                 android:textSize="14sp"
@@ -153,12 +183,16 @@
 
             <TextView
                 android:id="@+id/tvDistractorSaccades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="22sp"
                 android:textColor="@color/purple_500"
                 android:layout_marginTop="4dp" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="count"
                 android:textSize="12sp"
                 android:textColor="@android:color/darker_gray" />
@@ -179,6 +213,8 @@
             android:gravity="center">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="🎯 Fixation Count"
                 android:textStyle="bold"
                 android:textSize="14sp"
@@ -186,12 +222,16 @@
 
             <TextView
                 android:id="@+id/tvFixationCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="0"
                 android:textSize="22sp"
                 android:textColor="@color/purple_500"
                 android:layout_marginTop="4dp" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="count"
                 android:textSize="12sp"
                 android:textColor="@android:color/darker_gray" />
@@ -212,6 +252,8 @@
             android:gravity="center">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="🔄 Refixation Ratio"
                 android:textStyle="bold"
                 android:textSize="14sp"
@@ -219,12 +261,16 @@
 
             <TextView
                 android:id="@+id/tvRefixationRatio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="0.00"
                 android:textSize="22sp"
                 android:textColor="@color/purple_500"
                 android:layout_marginTop="4dp" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="ratio"
                 android:textSize="12sp"
                 android:textColor="@android:color/darker_gray" />
@@ -233,28 +279,43 @@
 
     </GridLayout>
 
-    <!-- Buttons -->
+    <!-- Buttons Container with Safe Area Padding -->
     <LinearLayout
+        android:id="@+id/buttonContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="16dp"
+        android:paddingBottom="32dp"
+        android:background="#ffffff"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <Button
             android:id="@+id/btnStartTracking"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:layout_weight="1"
             android:text="Start Tracking"
-            android:layout_marginEnd="4dp" />
+            android:textSize="16sp"
+            android:backgroundTint="#6200ee"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp" />
 
         <Button
             android:id="@+id/btnStopTracking"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:layout_weight="1"
             android:text="Stop Tracking"
-            android:layout_marginStart="4dp" />
+            android:textSize="16sp"
+            android:backgroundTint="#dc3545"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"
+            android:elevation="4dp" />
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

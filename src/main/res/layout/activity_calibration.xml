@@ -80,11 +80,11 @@
         android:textColor="@android:color/white"
         android:visibility="gone" />
 
-    <View
+    <!-- Gaze follower view that shows blue circle following user's gaze -->
+    <com.example.eyetracking.GazeFollowerView
         android:id="@+id/predictedGazeView"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:background="@drawable/gaze_dot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:visibility="gone" />
 
 </FrameLayout>

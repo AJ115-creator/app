@@ -8,9 +8,9 @@ import kotlin.math.pow
  * Based on JavaScript implementation from eye_features.js
  */
 class EyeMetricsExtractor(
-    private val fixationRadius: Float = 50f,           // pixels
-    private val fixationDuration: Long = 100L,         // milliseconds  
-    private val saccadeThreshold: Float = 30f,         // pixels
+    private val fixationRadius: Float = 80f,           // pixels - increased for better detection
+    private val fixationDuration: Long = 50L,          // milliseconds - reduced for quicker detection
+    private val saccadeThreshold: Float = 50f,         // pixels - adjusted threshold
     private val distractorThreshold: Float = 200f      // pixels
 ) {
     // Data structures for tracking
@@ -140,8 +140,8 @@ class EyeMetricsExtractor(
         val distance = calculateDistance(last, gazePoint)
         val timeDiff = gazePoint.timestamp - last.timestamp
         
-        // Detect saccade (rapid movement)
-        if (distance > saccadeThreshold && timeDiff < 100) {
+        // Detect saccade (rapid movement) - adjusted time window
+        if (distance > saccadeThreshold && timeDiff < 200) { // Increased time window
             val saccade = Saccade(
                 start = last,
                 end = gazePoint,
@@ -215,10 +215,12 @@ class EyeMetricsExtractor(
     private fun updateRefixationRatio(gazePoint: GazePoint) {
         val area = getCurrentArea(gazePoint)
         
-        area?.let {
-            val visitCount = visitedAreas[it.id] ?: 0
-            visitedAreas[it.id] = visitCount + 1
+        // Track when we enter a new area (not just any gaze point in the area)
+        if (area != null && area.id != currentArea?.id) {
+            val visitCount = visitedAreas[area.id] ?: 0
+            visitedAreas[area.id] = visitCount + 1
             
+            // If this area has been visited before, it's a refixation
             if (visitCount > 0) {
                 refixationCount++
             }
@@ -269,6 +271,8 @@ class EyeMetricsExtractor(
             0f
         }
         
+        // Calculate refixation ratio as ratio of refixations to total fixations
+        // This matches the JavaScript implementation
         val refixationRatio = if (fixationCount > 0) {
             refixationCount.toFloat() / fixationCount
         } else {

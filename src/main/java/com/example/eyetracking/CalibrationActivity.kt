@@ -45,12 +45,16 @@ class CalibrationActivity : AppCompatActivity() {
     private val bufferSize = 5
     private var proximityCounter = 0
     private val proximityThreshold = 10 // Frames of stability required
+    
+    // Time-based fallback to ensure calibration progresses
+    private var calibrationPointStartTime = 0L
+    private val maxTimePerPoint = 7000L // 7 seconds max per calibration point
 
     // State for per-point pause logic
     private var canCollect = true
 
     // Add a view for the predicted gaze
-    private lateinit var predictedGazeView: View
+    private lateinit var predictedGazeView: GazeFollowerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -170,7 +174,7 @@ class CalibrationActivity : AppCompatActivity() {
 
             // updateCalibrationPointToast() // This is no longer needed
 
-            Toast.makeText(this, "Calibration started. Look at the red circles.", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Look directly at each red circle. Blue dot will activate after initial training.", Toast.LENGTH_LONG).show()
             Log.d(TAG, "Calibration started")
             
             // Show the first calibration point immediately
@@ -214,6 +218,9 @@ class CalibrationActivity : AppCompatActivity() {
             val targetPoint = calibrator.getCurrentPoint(width, height)
             binding.calibrationOverlay.updateCalibrationPoint(targetPoint.first, targetPoint.second)
             Log.d(TAG, "Showing calibration point at: (${targetPoint.first}, ${targetPoint.second})")
+            
+            // Reset timer for this calibration point
+            calibrationPointStartTime = System.currentTimeMillis()
         }
     }
 
@@ -228,11 +235,16 @@ class CalibrationActivity : AppCompatActivity() {
     private fun stopCalibration() {
         try {
             isCalibrating = false
-            binding.btnStartCalibration.text = "Start Calibration"
-            binding.btnStopCalibration.visibility = View.GONE
-            binding.predictedGazeView.visibility = View.GONE
-            binding.calibrationOverlay.visibility = View.GONE
-            Toast.makeText(this, "Calibration stopped", Toast.LENGTH_SHORT).show()
+            runOnUiThread {
+                binding.btnStartCalibration.text = "Start Calibration"
+                binding.btnStopCalibration.visibility = View.GONE
+                binding.predictedGazeView.apply {
+                    visibility = View.GONE
+                    clearGaze()
+                }
+                binding.calibrationOverlay.visibility = View.GONE
+                Toast.makeText(this, "Calibration stopped", Toast.LENGTH_SHORT).show()
+            }
             Log.d(TAG, "Calibration stopped")
         } catch (e: Exception) {
             Log.e(TAG, "Error stopping calibration", e)
@@ -246,16 +258,18 @@ class CalibrationActivity : AppCompatActivity() {
             Log.d(TAG, "No face detected - showing status message")
             runOnUiThread {
                 binding.faceDetectionStatus.visibility = View.VISIBLE
-                binding.predictedGazeView.visibility = View.GONE
+                binding.predictedGazeView.apply {
+                    visibility = View.GONE
+                    clearGaze()
+                }
             }
             return
         }
 
         runOnUiThread {
             binding.faceDetectionStatus.visibility = View.GONE
-            if (isCalibrating) {
-                binding.predictedGazeView.visibility = View.VISIBLE
-            }
+            // Always show the blue circle during calibration
+            binding.predictedGazeView.visibility = View.VISIBLE
         }
 
         if (!isCalibrating) {
@@ -293,7 +307,16 @@ class CalibrationActivity : AppCompatActivity() {
 
             // Get prediction or use default center position
             val predictedGaze = calibrator.predict(features)
-            val displayGaze = predictedGaze ?: Pair(0.5f, 0.5f)  // Default to center if null
+            // Use predicted gaze if available, otherwise use a default position based on raw features
+            val displayGaze = if (predictedGaze != null) {
+                predictedGaze
+            } else {
+                // Use a simple heuristic based on eye features to show some movement
+                // This ensures the blue circle moves even before calibration model is trained
+                val defaultX = (0.4 + (features[0] * 0.2)).toFloat()  // Simple mapping from first feature
+                val defaultY = (0.4 + (features[1] * 0.2)).toFloat()  // Simple mapping from second feature
+                Pair(defaultX.coerceIn(0f, 1f), defaultY.coerceIn(0f, 1f))
+            }
             
             // Always process gaze for visual feedback
             gazeBuffer.add(displayGaze)
@@ -311,17 +334,26 @@ class CalibrationActivity : AppCompatActivity() {
 
             // Ensure both gaze and target are in the same (screen) coordinate space
             val gazeOnScreen = Pair(
-                smoothedGaze.first * overlayWidth,
-                smoothedGaze.second * overlayHeight
+                smoothedGaze.first * overlayWidth.toFloat(),
+                smoothedGaze.second * overlayHeight.toFloat()
             )
             val targetPoint = calibrator.getCurrentPoint(overlayWidth, overlayHeight)
 
             // Always update UI to show blue circle
             runOnUiThread {
-                binding.predictedGazeView.visibility = View.VISIBLE  // Ensure visible
-                binding.predictedGazeView.x = gazeOnScreen.first - (binding.predictedGazeView.width / 2)
-                binding.predictedGazeView.y = gazeOnScreen.second - (binding.predictedGazeView.height / 2)
+                // Ensure the blue circle is always visible and properly positioned
+                binding.predictedGazeView.visibility = View.VISIBLE
+                binding.predictedGazeView.setGazeVisible(true)
+                
+                // Update the gaze follower position
+                binding.predictedGazeView.updateGazePosition(
+                    gazeOnScreen.first,
+                    gazeOnScreen.second
+                )
+                
+                // Update calibration point (red circle)
                 binding.calibrationOverlay.updateCalibrationPoint(targetPoint.first, targetPoint.second)
+            }
             
             Log.d(TAG, "Gaze: $gazeOnScreen, Target: $targetPoint, Predicted: $predictedGaze")
 
@@ -331,27 +363,51 @@ class CalibrationActivity : AppCompatActivity() {
 
             Log.d(TAG, "Distance: $distance, Threshold: $threshold, ProximityCounter: $proximityCounter")
 
-            // Only collect data and check proximity if model has made a real prediction
-            if (predictedGaze != null && distance < threshold) {
-                    Log.d(TAG, "Within threshold - collecting data, proximityCounter: $proximityCounter")
-                    // CRITICAL FIX: Add data on EVERY frame while near target (like JavaScript)
-                    calibrator.add(features, targetPoint)
-                    
-                    proximityCounter++
-                    if (proximityCounter >= proximityThreshold) {
-                        Log.d(TAG, "Proximity threshold reached - moving to next point")
-                        // Move to next point only after collecting enough samples
-                        moveToNextCalibrationPoint()
-                        proximityCounter = 0
-                    }
-                } else {
-                    if (predictedGaze == null) {
-                        Log.v(TAG, "Prediction is null - model not trained yet")
-                    } else {
-                        Log.v(TAG, "Outside threshold - distance: $distance")
-                    }
+            // Check if we've been on this calibration point too long
+            val currentTime = System.currentTimeMillis()
+            val timeOnCurrentPoint = currentTime - calibrationPointStartTime
+            val forceMove = timeOnCurrentPoint > maxTimePerPoint
+            
+            if (forceMove) {
+                Log.d(TAG, "Time-based fallback triggered - forcing move to next point after ${timeOnCurrentPoint}ms")
+                // Collect some data even if user wasn't perfectly aligned
+                calibrator.add(features, targetPoint)
+                moveToNextCalibrationPoint()
+                proximityCounter = 0
+                return
+            }
+
+            // CRITICAL FIX: Start data collection immediately during calibration
+            // Don't wait for predictions - collect data when gaze is close to target OR when model isn't trained yet
+            val shouldCollectData = if (predictedGaze != null) {
+                // If model is trained, use prediction-based proximity
+                distance < threshold
+            } else {
+                // If model isn't trained yet, use raw gaze proximity (fallback mechanism)
+                Log.v(TAG, "Model not trained - using raw gaze for proximity detection")
+                val rawGazeDistance = euclideanDistance(gazeOnScreen, targetPoint)
+                rawGazeDistance < threshold * 2.0 // More lenient threshold for initial data collection
+            }
+            
+            if (shouldCollectData) {
+                Log.d(TAG, "Collecting data - proximityCounter: $proximityCounter, predicted: ${predictedGaze != null}")
+                // Add data on EVERY frame while near target
+                calibrator.add(features, targetPoint)
+                
+                proximityCounter++
+                if (proximityCounter >= proximityThreshold) {
+                    Log.d(TAG, "Proximity threshold reached - moving to next point")
+                    // Move to next point only after collecting enough samples
+                    moveToNextCalibrationPoint()
                     proximityCounter = 0
                 }
+            } else {
+                if (predictedGaze == null) {
+                    Log.v(TAG, "Prediction is null - model not trained yet, raw distance: ${euclideanDistance(gazeOnScreen, targetPoint)}, time on point: ${timeOnCurrentPoint}ms")
+                } else {
+                    Log.v(TAG, "Outside threshold - distance: $distance")
+                }
+                proximityCounter = 0
             }
         } catch (e: Exception) {
             Log.e(TAG, "Error processing face landmarks", e)
@@ -383,11 +439,18 @@ class CalibrationActivity : AppCompatActivity() {
         calibrator.movePoint()
 
         if (calibrator.isFinished()) {
+            // Save calibration data to singleton before navigating
+            CalibratorSingleton.setCalibrationData(
+                calibrator,
+                startWidth,
+                startHeight,
+                headStartingPos
+            )
+            
             stopCalibration()
             runOnUiThread {
-                Toast.makeText(this, "Calibration finished!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Calibration finished! Starting eye tracking...", Toast.LENGTH_LONG).show()
                 val intent = Intent(this, TrackingActivity::class.java)
-                // Here you would pass the calibration data (e.g., via a singleton or serialized object)
                 startActivity(intent)
                 finish()
             }
